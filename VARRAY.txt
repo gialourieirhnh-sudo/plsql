@@ -1,0 +1,10 @@
+DECLARE
+   TYPE t_arr IS VARRAY(5) OF NUMBER;
+   v_arr t_arr := t_arr(1,2,3,4,5);
+   s NUMBER := 0;
+BEGIN
+FOR i IN 1..v_arr.COUNT LOOP s := s + v_arr(i);
+END LOOP;
+DBMS_OUTPUT.PUT_LINE('SUM='||s);
+END;
+/

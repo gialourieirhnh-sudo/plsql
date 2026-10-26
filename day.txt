@@ -1,0 +1,9 @@
+DECLARE 
+    v_then DATE := SYSDATE - 20;
+    v_days NUMBER;
+BEGIN 
+v_days := SYSDATE - v_then; -- διαφορα σε ημερες
+IF v_days <= 30 THEN DBMS_OUTPUT.PUT_LINE('εντος 30 ημερων');
+END IF;
+END;
+/

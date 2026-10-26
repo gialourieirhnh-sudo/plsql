@@ -1,0 +1,9 @@
+DECLARE
+    v_first VARCHAR2(50) := ' ALICE ';
+    v_last CHAR(10) := ' COOPER ';
+    v_full VARCHAR2(100);
+BEGIN
+v_full := TRIM(v_first) || ' ' || RTRIM(v_last);
+DBMS_OUTPUT.PUT_LINE('FULL=' ||v_full);
+END;
+/
