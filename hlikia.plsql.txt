@@ -1,0 +1,10 @@
+DECLARE
+     age NUMBER := 13;
+BEGIN 
+  IF age <= 18 THEN
+      DBMS_OUTPUT.PUT_LINE('underage');
+  ELSE
+      DBMS_OUTPUT.PUT_LINE('adult');
+  END IF;
+END;
+/

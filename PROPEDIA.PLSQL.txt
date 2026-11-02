@@ -1,0 +1,11 @@
+CREATE OR REPLACE PROCEDURE p1(k NUMBER) AS
+BEGIN 
+   FOR I IN 0..10 LOOP
+       DBMS_OUTPUT.PUT_LINE(K || '*'|| i || '=' || (K*I));
+    END LOOP;
+END;
+/
+BEGIN
+  p1(9);
+END;
+/

@@ -1,0 +1,10 @@
+DECLARE
+     grade NUMBER := 17;
+BEGIN 
+  IF grade >= 10 THEN
+      DBMS_OUTPUT.PUT_LINE('SUCCESS');
+  ELSE
+      DBMS_OUTPUT.PUT_LINE('FAILED');
+END IF;
+END;
+/

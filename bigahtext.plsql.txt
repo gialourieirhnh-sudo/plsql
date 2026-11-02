@@ -1,0 +1,30 @@
+CREATE OR REPLACE PROCEDURE bar AS
+BEGIN 
+   DBMS_OUTPUT.PUT_LINE('-----------------');
+END;
+/
+CREATE OR REPLACE PROCEDURE tittle(j NUMBER) AS
+     DBMS_OUTPUT.PUT_LINE('propedia arithmou = ' ||  j)
+END;
+/
+CREATE OR REPLACE PROCEDURE propText(j NUMBER , I NUMBER) AS 
+BEGIN 
+  DBMS_OUTPUT.PUT_LINE(j || '*'|| i || '=' || (j*I));
+END;
+/
+CREATE OR REPLACE PROCEDURE propedia(k NUMBER) AS
+BEGIN 
+   FOR j IN 0..K LOOP
+    bar;
+    tittle(j);
+    bar;
+      FOR I IN 0..10 LOOP 
+       propText(j , i);
+      END LOOP;
+    END LOOP;     
+END;
+/
+BEGIN
+  propedia(9);
+END;
+/

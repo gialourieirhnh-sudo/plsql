@@ -1,0 +1,9 @@
+DECLARE
+      v1  NUMBER := 3;
+      v2  NUMBER := 2;
+      v3  NUMBER := 0;
+BEGIN 
+  v3:= v1 + v2;
+  DBMS_OUTPUT.PUT_LINE(v1||' + ' || v2 || ' = '||v3);
+END;
+/
